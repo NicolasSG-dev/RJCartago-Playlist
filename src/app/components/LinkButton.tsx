@@ -46,6 +46,7 @@ export default function LinkButton({
             alt={`Preview de ${name}`}
             width={288}
             height={160}
+            unoptimized
             className="object-cover w-full"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />

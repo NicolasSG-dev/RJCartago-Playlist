@@ -8,7 +8,8 @@ const playlists = [
     url: "https://open.spotify.com/playlist/7uXiWbwaXDBetg8cwDkEv4?si=a4bb93ea95dc4e72",
     className: "bg-green-500 text-white hover:bg-green-600",
     arrow: "/assets/right-arrow.svg",
-    preview: "/assets/spotify-preview.webp",
+    preview: "/assets/Spotify-preview.webp",
+    
   },
   {
     id: 2,
