@@ -62,7 +62,7 @@ export default function LinkButton({
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         className={`
-          px-6 py-4 w-72 h-14 inline-flex items-center
+          px-5 py-4 w-72 h-14 inline-flex items-center
           rounded-md font-medium text-sm
           shadow-xl hover:shadow-lg
           transition-all duration-200 ease-in-out

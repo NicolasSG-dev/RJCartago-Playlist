@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="min-h-screen [background:radial-gradient(ellipse_at_center,_#ffbcbe_35%,_white_70%)]">
       <Navbar />
-      <div className="contenido flex flex-col justify-center items-center mx-auto w-max p-5 mt-1">
+      <div className="contenido flex flex-col justify-center items-center mx-auto w-max p-5 -mt-2">
         <div className="encabezado text-center ">
           <Image
             src="/assets/logo.webp"
