@@ -20,6 +20,12 @@ export default function LinkButton({
   preview,
 }: LinkButtonProps) {
   const [hovered, setHovered] = useState(false);
+  const [touched, setTouched] = useState(false);
+
+  const showPreview = hovered || touched;
+
+  const handleTouchStart = () => setTouched(true);
+  const handleTouchEnd = () => setTouched(false);
 
   return (
     <div
@@ -28,10 +34,10 @@ export default function LinkButton({
       onMouseLeave={() => setHovered(false)}
     >
       {/* Preview modal */}
-      {preview && hovered && (
+      {preview && showPreview && (
         <div
           className="absolute bottom-full left-0 mb-2 z-50
-                w-full  {/* 👈 coincide con el botón */}
+                w-full
                 rounded-t-xl overflow-hidden shadow-2xl
                 preview-popover"
         >
@@ -53,12 +59,14 @@ export default function LinkButton({
         href={url}
         target="_blank"
         rel="noopener noreferrer"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
         className={`
           px-6 py-4 w-72 h-14 inline-flex items-center
           rounded-md font-medium text-sm
           shadow-xl hover:shadow-lg
           transition-all duration-200 ease-in-out
-          hover:-translate-y-2 active:translate-y-0
+          hover:-translate-y-2 active:translate-y-0 active:scale-95 active:shadow-md
           justify-between hover:rounded-t-[0]
           ${className}
         `}

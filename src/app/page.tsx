@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="min-h-screen [background:radial-gradient(ellipse_at_center,_#ffbcbe_35%,_white_70%)]">
       <Navbar />
-      <div className="contenido flex flex-col justify-center items-center mx-auto w-max p-5 mt-8">
+      <div className="contenido flex flex-col justify-center items-center mx-auto w-max p-5 mt-1">
         <div className="encabezado text-center ">
           <Image
             src="/assets/logo.webp"
@@ -19,10 +19,10 @@ export default function Home() {
           <h2 className="-mt-3 text-xl tracking-wide font-sans font-bold">
             Playlist
           </h2>
-          <h2 className="-mt-1 text-2xl tracking-wide font-sans font-bold bg-gradient-to-r from-red-500 to-fuchsia-500 bg-clip-text text-transparent">
+          <h2 className="-mt-1 text-2xl tracking-wide font-sans font-extrabold bg-gradient-to-r from-red-500 to-fuchsia-500 bg-clip-text text-transparent">
             Revolución juvenil Cartago
           </h2>
-          <span className="text-3xl text-[#fa3850]">——</span>
+          <div className="bg-[#fa3850] w-10 h-1 mx-auto rounded my-2"></div>
           <p className="font-sans">Donde la música se encuentra con tu fé</p>
         </div>
         <div className="playlists -mt-2">
